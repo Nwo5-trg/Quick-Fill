@@ -1,0 +1,49 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
+	},
+	"id": "nwo5.quick_fill",
+	"name": "Quick Fill",
+	"version": "v1.0.0",
+	"developer": "Nwo5",
+	"description": "Quickly fill a rectangle in the editor.",
+	"tags": ["editor", "utility", "offline"],
+	"links": {
+		"source": "https://github.com/Nwo5-trg/Quick-Fill"
+	},
+	"resources": {
+		"spritesheets": {
+            "Sheet": ["resources/Sheet/*.png"]
+        }
+    },
+	"settings": {
+		"use-obj-2": {
+			"type": "bool",
+			"name": "Use Object 2",
+			"description": "Uses object 2's id and properties instead of object 1's",
+			"default": false
+		},
+		"select-on-fill": {
+			"type": "bool",
+			"name": "Select On Fill",
+			"description": "Selects everything after filling.",
+			"default": false
+		},
+		"copy-values": {
+			"type": "bool",
+			"name": "Copy Values",
+			"description": "Whether to copy values like groups and rotation or not when filling.",
+			"default": true
+		},
+		"dont-use-workaround": {
+			"type": "bool",
+			"name": "Don't Use Copy Values",
+			"description": "To copy object settings this mod uses the in-game copy/paste state buttons, if you don't want your copied state getting messed up, turn this on (most values will not be preserved with this setting on)",
+			"default": false,
+			"enable-if": "copy-values"
+		}
+	}
+}
