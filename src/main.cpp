@@ -22,12 +22,11 @@ class $modify(EditUI, EditorUI) {
                 this->selectObject(properties, true);
                 m_copyValuesBtn->activate();
             }
+            this->updateGridNodeSize(); // workaround to getting the correct gridsize
+            float gridSize = m_gridSize;
             
             this->selectObjects(selectedObjs, true);
             m_trashBtn->activate(); // workaround to make undo work and not crash
-
-            this->updateGridNodeSize(); // workaround to getting the correct gridsize
-            float gridSize = m_gridSize;
             
             std::vector<CCPoint> points;
           

@@ -7,7 +7,7 @@
 	},
 	"id": "nwo5.quick_fill",
 	"name": "Quick Fill",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Nwo5",
 	"description": "Quickly fill a rectangle in the editor.",
 	"tags": ["editor", "utility", "offline"],
